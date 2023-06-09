@@ -19,7 +19,7 @@ for ($i = 0; $i -lt $carpetaOrigen.Count; $i++) {
     robocopy $origen $destino /e /log+:$logArchivo /NS /NDL /NFL /Z /R:1 /copy:DA
 
     # Se agregra la fecha al archivo
-    Add-Content $logArchivo "Robocopy completado para $origen a $destino el $($date.ToString('dd/MM/yyyy HH:mm:ss'))"
+    Add-Content $logArchivo "Robocopy completado para $origen a $destino el $($fecha.ToString('dd/MM/yyyy HH:mm:ss'))"
 }
 
 pause
